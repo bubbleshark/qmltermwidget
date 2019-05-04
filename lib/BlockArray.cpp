@@ -25,11 +25,12 @@
 
 // Own
 #include "BlockArray.h"
+#include "mmap.h"
 
 // System
-#include <sys/mman.h>
+//#include <sys/mman.h>
 #include <sys/param.h>
-#include <unistd.h>
+#include <windows.h>
 #include <stdio.h>
 
 
@@ -47,8 +48,12 @@ BlockArray::BlockArray()
         length(0)
 {
     // lastmap_index = index = current = size_t(-1);
+    SYSTEM_INFO si;
+    int pagesize = 0;
+    GetSystemInfo(&si);
+    pagesize = si.dwPageSize;
     if (blocksize == 0) {
-        blocksize = ((sizeof(Block) / getpagesize()) + 1) * getpagesize();
+        blocksize = ((sizeof(Block) / pagesize) + 1) * pagesize;
     }
 
 }
