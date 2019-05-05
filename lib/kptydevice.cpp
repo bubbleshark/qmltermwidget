@@ -37,7 +37,7 @@
 #include <unistd.h>
 #include <errno.h>
 #include <signal.h>
-#include <termios.h>
+//#include <termios.h>
 #include <fcntl.h>
 #include <sys/ioctl.h>
 #ifdef HAVE_SYS_FILIO_H

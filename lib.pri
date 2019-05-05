@@ -32,7 +32,8 @@ HEADERS += $$PWD/lib/BlockArray.h \
     #$$PWD/lib/qtermwidget.h
     lib/mmap.h \
     lib/mmap.h \
-    $$PWD/lib/wcwidth.h
+    $$PWD/lib/wcwidth.h \
+    $$PWD/lib/sys_win.h
 
 SOURCES += $$PWD/lib/BlockArray.cpp \
     $$PWD/lib/ColorScheme.cpp \
@@ -59,6 +60,7 @@ SOURCES += $$PWD/lib/BlockArray.cpp \
     $$PWD/lib/tools.cpp \
     $$PWD/lib/Vt102Emulation.cpp \
     lib/mmap.cpp \
-    $$PWD/lib/wcwidth.cpp
+    $$PWD/lib/wcwidth.cpp \
+    $$PWD/lib/sys_win.cpp
 
 #FORMS = $$PWD/lib/SearchBar.ui

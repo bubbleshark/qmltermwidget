@@ -23,6 +23,7 @@
 */
 
 #include "kpty_p.h"
+#include "sys_win.h"
 
 #include <QtDebug>
 
