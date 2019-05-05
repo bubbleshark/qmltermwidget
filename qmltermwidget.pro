@@ -2,6 +2,8 @@ TEMPLATE = lib
 TARGET = qmltermwidget
 QT += qml quick widgets
 CONFIG += qt plugin c++11
+CONFIG -= x86_64
+CONFIG += x86
 
 include(lib.pri)
 

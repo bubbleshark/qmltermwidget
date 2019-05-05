@@ -16,6 +16,7 @@
 #endif
 
 #include "konsole_wcwidth.h"
+#include "wcwidth.h"
 
 int konsole_wcwidth(wchar_t ucs)
 {

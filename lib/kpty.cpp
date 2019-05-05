@@ -64,9 +64,9 @@
 #endif
 
 #include <sys/types.h>
-#include <sys/ioctl.h>
+//#include <sys/ioctl.h>
 #include <sys/time.h>
-#include <sys/resource.h>
+//#include <sys/resource.h>
 #include <sys/stat.h>
 #include <sys/param.h>
 
@@ -77,7 +77,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
-#include <grp.h>
+//#include <grp.h>
 
 #if defined(HAVE_PTY_H)
 # include <pty.h>
@@ -94,7 +94,7 @@ extern "C" {
 # include <utempter.h>
 }
 #else
-# include <utmp.h>
+//# include <utmp.h>
 # ifdef HAVE_UTMPX
 #  include <utmpx.h>
 # endif
@@ -111,7 +111,7 @@ extern "C" {
 /* for HP-UX (some versions) the extern C is needed, and for other
    platforms it doesn't hurt */
 extern "C" {
-#include <termios.h>
+//#include <termios.h>
 #if defined(HAVE_TERMIO_H)
 # include <termio.h> // struct winsize on some systems
 #endif

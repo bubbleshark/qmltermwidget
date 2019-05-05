@@ -1,5 +1,6 @@
 #ifndef MMAP_H
 #define MMAP_H
+#include <_mingw_off_t.h>
 #define PROT_READ     0x1
 #define PROT_WRITE    0x2
 /* This flag is only available in WinXP+ */
@@ -23,6 +24,10 @@
 # define DWORD_HI(x) (0)
 # define DWORD_LO(x) (x)
 #endif
+
+//#define size_t (unsigned int)
+typedef unsigned int size_t;
+
 void *mmap(void *start, size_t length, int prot, int flags, int fd, off_t offset);
 int munmap(void *addr, size_t length);
 

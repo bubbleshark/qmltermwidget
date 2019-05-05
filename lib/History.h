@@ -20,7 +20,11 @@
 
 #ifndef TEHISTORY_H
 #define TEHISTORY_H
-
+//#define _OFF64_T_DEFINED
+typedef long long _off64_t;
+typedef long long off64_t;
+#undef _OFF64_T_DEFINED
+#define _OFF64_T_DEFINED _off64_t
 #include "mmap.h"
 
 // Qt

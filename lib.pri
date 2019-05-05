@@ -31,7 +31,8 @@ HEADERS += $$PWD/lib/BlockArray.h \
     $$PWD/lib/mac-vkcode.h \
     #$$PWD/lib/qtermwidget.h
     lib/mmap.h \
-    lib/mmap.h
+    lib/mmap.h \
+    $$PWD/lib/wcwidth.h
 
 SOURCES += $$PWD/lib/BlockArray.cpp \
     $$PWD/lib/ColorScheme.cpp \
@@ -57,6 +58,7 @@ SOURCES += $$PWD/lib/BlockArray.cpp \
     $$PWD/lib/TerminalDisplay.cpp \
     $$PWD/lib/tools.cpp \
     $$PWD/lib/Vt102Emulation.cpp \
-    lib/mmap.cpp
+    lib/mmap.cpp \
+    $$PWD/lib/wcwidth.cpp
 
 #FORMS = $$PWD/lib/SearchBar.ui
